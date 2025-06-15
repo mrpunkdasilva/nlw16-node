@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=file:/app/prisma/dev.db
+    volumes:
+      - ./prisma:/app/prisma
+    restart: unless-stopped
+    command: >
+      sh -c "npx prisma migrate deploy && npm start"

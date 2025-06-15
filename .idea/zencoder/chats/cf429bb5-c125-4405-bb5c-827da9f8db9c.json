@@ -1,0 +1,335 @@
+{
+    "checksum": "67af922791340af009814976d0672c34ec5307d7f7e136306435291a2d85b2c1",
+    "data": {
+    "id": "cf429bb5-c125-4405-bb5c-827da9f8db9c",
+    "createdAt": 1749951873912,
+    "updatedAt": 1749951932130,
+    "title": "README and Docker Setup Guide",
+    "messages": [
+        {
+            "id": "17342bc5-94bf-4f39-b299-1b53e6992729",
+            "role": "user",
+            "content": [
+                {
+                    "type": "codeSnippet",
+                    "text": "cria o readme com badges  e bem explicado em ingles, cria o ambiente docker"
+                }
+            ],
+            "context": {
+                "currentFile": {
+                    "path": "README.md",
+                    "fsPath": "/home/mrpunkdasilva/WebstormProjects/nlw16-node/README.md",
+                    "sources": [
+                        "opened_tab"
+                    ],
+                    "content": "# NLW 16\n\n> Em desenvolvimento\n\nNesa edição participei da trilha Node, criando uma API com TypeSceript + Fastify + Prima com SQLite\n",
+                    "language": "markdown"
+                },
+                "codebaseEnabled": true
+            },
+            "createdAt": 1749951873914,
+            "isInternal": false,
+            "rawContent": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "codeBlock",
+                        "attrs": {
+                            "language": null
+                        },
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": "cria o readme com badges  e bem explicado em ingles, cria o ambiente docker"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "477b0cae-b150-48fe-8fe8-33e903cfa11d",
+            "role": "assistant",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "I'll help you create a detailed README.md in English with badges and set up a Docker environment for your project. Let me first understand what we're working with by examining the current project structure."
+                },
+                {
+                    "type": "toolCall",
+                    "toolCallId": "toolu_019UR8S9eaMePU2JCyo1XauD",
+                    "statusText": "Viewed directory",
+                    "status": "SUCCESS",
+                    "context": {
+                        "files": [
+                            {
+                                "path": ".",
+                                "fsPath": "/home/mrpunkdasilva/WebstormProjects/nlw16-node/."
+                            }
+                        ]
+                    },
+                    "isHidden": false
+                },
+                {
+                    "type": "text",
+                    "text": "Let me check the package.json to understand the project dependencies and structure:"
+                },
+                {
+                    "type": "toolCall",
+                    "toolCallId": "toolu_01NMJtxQs4HDha1vjfUBfb2t",
+                    "statusText": "Viewed file",
+                    "status": "SUCCESS",
+                    "context": {
+                        "files": [
+                            {
+                                "path": "package.json",
+                                "fsPath": "/home/mrpunkdasilva/WebstormProjects/nlw16-node/package.json"
+                            }
+                        ]
+                    },
+                    "isHidden": false
+                },
+                {
+                    "type": "text",
+                    "text": "Now let me check the server.ts file to understand the application structure:"
+                },
+                {
+                    "type": "toolCall",
+                    "toolCallId": "toolu_01UjeW6AQaoevFE6h4jAwqKj",
+                    "statusText": "Viewed file",
+                    "status": "SUCCESS",
+                    "context": {
+                        "files": [
+                            {
+                                "path": "src/server.ts",
+                                "fsPath": "/home/mrpunkdasilva/WebstormProjects/nlw16-node/src/server.ts"
+                            }
+                        ]
+                    },
+                    "isHidden": false
+                },
+                {
+                    "type": "text",
+                    "text": "Let me check the Prisma schema to understand the database structure:"
+                },
+                {
+                    "type": "toolCall",
+                    "toolCallId": "toolu_013YxdV89GY3j49H7breLjyU",
+                    "statusText": "Viewed file",
+                    "status": "SUCCESS",
+                    "context": {
+                        "files": [
+                            {
+                                "path": "prisma/schema.prisma",
+                                "fsPath": "/home/mrpunkdasilva/WebstormProjects/nlw16-node/prisma/schema.prisma"
+                            }
+                        ]
+                    },
+                    "isHidden": false
+                },
+                {
+                    "type": "text",
+                    "text": "Now I'll create a comprehensive README.md file with badges and detailed information about the project:"
+                },
+                {
+                    "type": "toolCall",
+                    "toolCallId": "toolu_01GGr6Ei14fsoRaPQmpEvwZq",
+                    "statusText": "Change generated",
+                    "status": "SUCCESS",
+                    "context": {
+                        "files": [
+                            {
+                                "path": "README.md",
+                                "fsPath": "/home/mrpunkdasilva/WebstormProjects/nlw16-node/README.md"
+                            }
+                        ]
+                    },
+                    "isHidden": false
+                },
+                {
+                    "type": "codeHunk",
+                    "lineBasedDiff": "--- README.md\n+++ README.md\n@@ -1,5 +1,134 @@\n-# NLW 16\n+# Trip Planner API\n \n-> Em desenvolvimento\n+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-blue.svg)](https://www.typescriptlang.org/)\n+[![Fastify](https://img.shields.io/badge/Fastify-4.28.1-green.svg)](https://www.fastify.io/)\n+[![Prisma](https://img.shields.io/badge/Prisma-5.16.2-orange.svg)](https://www.prisma.io/)\n+[![SQLite](https://img.shields.io/badge/SQLite-3-lightgrey.svg)](https://www.sqlite.org/)\n+[![License](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)\n \n-Nesa edição participei da trilha Node, criando uma API com TypeSceript + Fastify + Prima com SQLite\n+A robust RESTful API for trip planning and management built with TypeScript, Fastify, and Prisma ORM.\n+\n+## 📋 Table of Contents\n+\n+- [Features](#features)\n+- [Tech Stack](#tech-stack)\n+- [Getting Started](#getting-started)\n+  - [Prerequisites](#prerequisites)\n+  - [Installation](#installation)\n+  - [Docker Setup](#docker-setup)\n+- [API Endpoints](#api-endpoints)\n+- [Database Schema](#database-schema)\n+- [Development](#development)\n+- [License](#license)\n+\n+## ✨ Features\n+\n+- Create and manage trips with destinations and date ranges\n+- Add and confirm participants for trips\n+- Schedule activities for trips\n+- Store useful links related to trips\n+- Email notifications for trip confirmations\n+\n+## 🛠️ Tech Stack\n+\n+- **[TypeScript](https://www.typescriptlang.org/)**: Strongly typed programming language\n+- **[Fastify](https://www.fastify.io/)**: Fast and low overhead web framework\n+- **[Prisma](https://www.prisma.io/)**: Next-generation ORM for Node.js and TypeScript\n+- **[SQLite](https://www.sqlite.org/)**: Lightweight, file-based database\n+- **[Zod](https://zod.dev/)**: TypeScript-first schema validation\n+- **[Nodemailer](https://nodemailer.com/)**: Module for email sending\n+- **[Day.js](https://day.js.org/)**: Lightweight date library\n+\n+## 🚀 Getting Started\n+\n+### Prerequisites\n+\n+- Node.js (v16 or higher)\n+- npm or yarn\n+- Docker (optional, for containerized setup)\n+\n+### Installation\n+\n+1. Clone the repository:\n+   ```bash\n+   git clone https://github.com/yourusername/trip-planner-api.git\n+   cd trip-planner-api\n+   ```\n+\n+2. Install dependencies:\n+   ```bash\n+   npm install\n+   # or\n+   yarn install\n+   ```\n+\n+3. Set up environment variables:\n+   ```bash\n+   # Create a .env file with the following variables\n+   DATABASE_URL=\"file:./dev.db\"\n+   # Add other environment variables as needed for email configuration, etc.\n+   ```\n+\n+4. Run database migrations:\n+   ```bash\n+   npx prisma migrate dev\n+   ```\n+\n+5. Start the development server:\n+   ```bash\n+   npm run dev\n+   # or\n+   yarn dev\n+   ```\n+\n+### Docker Setup\n+\n+You can also run the application using Docker:\n+\n+1. Build the Docker image:\n+   ```bash\n+   docker build -t trip-planner-api .\n+   ```\n+\n+2. Run the container:\n+   ```bash\n+   docker run -p 8000:8000 -d trip-planner-api\n+   ```\n+\n+Alternatively, use Docker Compose:\n+   ```bash\n+   docker-compose up -d\n+   ```\n+\n+## 📡 API Endpoints\n+\n+The API provides the following endpoints:\n+\n+- `POST /trips`: Create a new trip\n+- `POST /trips/:id/confirm`: Confirm a trip\n+- `POST /participants/:id/confirm`: Confirm a participant\n+\n+For detailed API documentation, refer to the API documentation (coming soon).\n+\n+## 🗄️ Database Schema\n+\n+The database includes the following models:\n+\n+- **Trip**: Stores trip information including destination and date range\n+- **Participant**: Manages people joining the trip\n+- **Activity**: Schedules activities during the trip\n+- **Link**: Stores useful links related to the trip\n+\n+## 👨‍💻 Development\n+\n+To contribute to the project:\n+\n+1. Fork the repository\n+2. Create a feature branch: `git checkout -b feature/your-feature-name`\n+3. Commit your changes: `git commit -m 'Add some feature'`\n+4. Push to the branch: `git push origin feature/your-feature-name`\n+5. Open a pull request\n+\n+## 📄 License\n+\n+This project is licensed under the ISC License.",
+                    "refToolCallId": "toolu_01GGr6Ei14fsoRaPQmpEvwZq"
+                },
+                {
+                    "type": "text",
+                    "text": "Now, let's create a Docker environment for the project. I'll create a Dockerfile and docker-compose.yml file:"
+                },
+                {
+                    "type": "toolCall",
+                    "toolCallId": "toolu_01HcMHgnup1wxoq7w6R4heTm",
+                    "statusText": "Change generated",
+                    "status": "SUCCESS",
+                    "context": {
+                        "files": [
+                            {
+                                "path": "Dockerfile",
+                                "fsPath": "/home/mrpunkdasilva/WebstormProjects/nlw16-node/Dockerfile"
+                            }
+                        ]
+                    },
+                    "isHidden": false
+                },
+                {
+                    "type": "codeHunk",
+                    "lineBasedDiff": "--- Dockerfile\n+++ Dockerfile\n@@ -0,0 +1,25 @@\n+FROM node:20-alpine\n+\n+WORKDIR /app\n+\n+# Copy package files and install dependencies\n+COPY package*.json ./\n+RUN npm install\n+\n+# Copy prisma schema\n+COPY prisma ./prisma/\n+\n+# Generate Prisma client\n+RUN npx prisma generate\n+\n+# Copy the rest of the application\n+COPY . .\n+\n+# Build TypeScript code\n+RUN npm run build\n+\n+# Expose the port the app runs on\n+EXPOSE 8000\n+\n+# Command to run the application\n+CMD [\"npm\", \"start\"]",
+                    "refToolCallId": "toolu_01HcMHgnup1wxoq7w6R4heTm"
+                },
+                {
+                    "type": "text",
+                    "text": "Let's add a build script to package.json:"
+                },
+                {
+                    "type": "toolCall",
+                    "toolCallId": "toolu_01P6cy1tWk45tjUnSH5ZFias",
+                    "statusText": "Change generated",
+                    "status": "SUCCESS",
+                    "context": {
+                        "files": [
+                            {
+                                "path": "package.json",
+                                "fsPath": "/home/mrpunkdasilva/WebstormProjects/nlw16-node/package.json"
+                            }
+                        ]
+                    },
+                    "isHidden": false
+                },
+                {
+                    "type": "codeHunk",
+                    "lineBasedDiff": "--- package.json\n+++ package.json\n@@ -4,6 +4,8 @@\n   \"main\": \"index.js\",\n   \"scripts\": {\n     \"dev\": \"npx tsx watch src/server.ts\",\n+    \"build\": \"tsc\",\n+    \"start\": \"node dist/server.js\",\n     \"postinstall\": \"npx prisma generate\"\n   },\n   \"keywords\": [],\n",
+                    "refToolCallId": "toolu_01P6cy1tWk45tjUnSH5ZFias"
+                },
+                {
+                    "type": "text",
+                    "text": "Now, let's create a docker-compose.yml file:"
+                },
+                {
+                    "type": "toolCall",
+                    "toolCallId": "toolu_01MhCSCiaeibY7y68pUX3vta",
+                    "statusText": "Change generated",
+                    "status": "SUCCESS",
+                    "context": {
+                        "files": [
+                            {
+                                "path": "docker-compose.yml",
+                                "fsPath": "/home/mrpunkdasilva/WebstormProjects/nlw16-node/docker-compose.yml"
+                            }
+                        ]
+                    },
+                    "isHidden": false
+                },
+                {
+                    "type": "codeHunk",
+                    "lineBasedDiff": "--- docker-compose.yml\n+++ docker-compose.yml\n@@ -0,0 +1,17 @@\n+version: '3.8'\n+\n+services:\n+  api:\n+    build:\n+      context: .\n+      dockerfile: Dockerfile\n+    ports:\n+      - \"8000:8000\"\n+    environment:\n+      - NODE_ENV=production\n+      - DATABASE_URL=file:/app/prisma/dev.db\n+    volumes:\n+      - ./prisma:/app/prisma\n+    restart: unless-stopped\n+    command: >\n+      sh -c \"npx prisma migrate deploy && npm start\"",
+                    "refToolCallId": "toolu_01MhCSCiaeibY7y68pUX3vta"
+                },
+                {
+                    "type": "text",
+                    "text": "Let's also create a .dockerignore file to exclude unnecessary files from the Docker build:"
+                },
+                {
+                    "type": "toolCall",
+                    "toolCallId": "toolu_01PTNDtWAc49473LUMGhTg9L",
+                    "statusText": "Change generated",
+                    "status": "SUCCESS",
+                    "context": {
+                        "files": [
+                            {
+                                "path": ".dockerignore",
+                                "fsPath": "/home/mrpunkdasilva/WebstormProjects/nlw16-node/.dockerignore"
+                            }
+                        ]
+                    },
+                    "isHidden": false
+                },
+                {
+                    "type": "codeHunk",
+                    "lineBasedDiff": "--- .dockerignore\n+++ .dockerignore\n@@ -0,0 +1,16 @@\n+node_modules\n+npm-debug.log\n+.git\n+.gitignore\n+.env\n+.env.local\n+.env.development\n+.env.test\n+.env.production\n+.DS_Store\n+dist\n+coverage\n+.vscode\n+.idea\n+*.md\n+!README.md",
+                    "refToolCallId": "toolu_01PTNDtWAc49473LUMGhTg9L"
+                },
+                {
+                    "type": "text",
+                    "text": "Let's create a sample .env file for the project:"
+                },
+                {
+                    "type": "toolCall",
+                    "toolCallId": "toolu_01UTSs52PYMbUn9QkbDkHz3K",
+                    "statusText": "Change generated",
+                    "status": "SUCCESS",
+                    "context": {
+                        "files": [
+                            {
+                                "path": ".env.example",
+                                "fsPath": "/home/mrpunkdasilva/WebstormProjects/nlw16-node/.env.example"
+                            }
+                        ]
+                    },
+                    "isHidden": false
+                },
+                {
+                    "type": "codeHunk",
+                    "lineBasedDiff": "--- .env.example\n+++ .env.example\n@@ -0,0 +1,9 @@\n+# Database\n+DATABASE_URL=\"file:./prisma/dev.db\"\n+\n+# Email Configuration (if using nodemailer)\n+SMTP_HOST=smtp.example.com\n+SMTP_PORT=587\n+SMTP_USER=your-email@example.com\n+SMTP_PASS=your-password\n+EMAIL_FROM=your-email@example.com",
+                    "refToolCallId": "toolu_01UTSs52PYMbUn9QkbDkHz3K"
+                },
+                {
+                    "type": "text",
+                    "text": "I've completed the tasks you requested:\n\n1. **Created a comprehensive README.md in English with badges** that includes:\n   - Project description and features\n   - Tech stack details with badges\n   - Installation and setup instructions\n   - API endpoints overview\n   - Database schema information\n   - Development guidelines\n   - License information\n\n2. **Set up a Docker environment** with:\n   - A Dockerfile for containerizing the application\n   - A docker-compose.yml file for easy deployment\n   - A .dockerignore file to optimize Docker builds\n   - Added build and start scripts to package.json\n   - Created a .env.example file for environment configuration\n\nYour project is now well-documented with a professional README and has Docker support for containerized deployment. Users can easily understand what your project does, how to set it up, and deploy it using Docker.\n\nIs there anything specific about the README or Docker setup you'd like me to explain or modify?"
+                },
+                {
+                    "type": "codePatch",
+                    "diffs": [
+                        {
+                            "path": ".env.example",
+                            "patch": "@@ -0,0 +1,223 @@\n+# Database%0ADATABASE_URL=%22file:./prisma/dev.db%22%0A%0A# Email Configuration (if using nodemailer)%0ASMTP_HOST=smtp.example.com%0ASMTP_PORT=587%0ASMTP_USER=your-email@example.com%0ASMTP_PASS=your-password%0AEMAIL_FROM=your-email@example.com\n",
+                            "isNew": true,
+                            "isApplied": true
+                        },
+                        {
+                            "path": ".dockerignore",
+                            "patch": "@@ -0,0 +1,155 @@\n+node_modules%0Anpm-debug.log%0A.git%0A.gitignore%0A.env%0A.env.local%0A.env.development%0A.env.test%0A.env.production%0A.DS_Store%0Adist%0Acoverage%0A.vscode%0A.idea%0A*.md%0A!README.md\n",
+                            "isNew": true,
+                            "isApplied": true
+                        },
+                        {
+                            "path": "package.json",
+                            "patch": "@@ -122,16 +122,72 @@\n er.ts%22,%0A\n+    %22build%22: %22tsc%22,%0A    %22start%22: %22node dist/server.js%22,%0A\n     %22pos\n",
+                            "isNew": false,
+                            "isApplied": true
+                        },
+                        {
+                            "path": "docker-compose.yml",
+                            "patch": "@@ -0,0 +1,348 @@\n+version: '3.8'%0A%0Aservices:%0A  api:%0A    build:%0A      context: .%0A      dockerfile: Dockerfile%0A    ports:%0A      - %228000:8000%22%0A    environment:%0A      - NODE_ENV=production%0A      - DATABASE_URL=file:/app/prisma/dev.db%0A    volumes:%0A      - ./prisma:/app/prisma%0A    restart: unless-stopped%0A    command: %3E%0A      sh -c %22npx prisma migrate deploy && npm start%22\n",
+                            "isNew": true,
+                            "isApplied": true
+                        },
+                        {
+                            "path": "Dockerfile",
+                            "patch": "@@ -0,0 +1,402 @@\n+FROM node:20-alpine%0A%0AWORKDIR /app%0A%0A# Copy package files and install dependencies%0ACOPY package*.json ./%0ARUN npm install%0A%0A# Copy prisma schema%0ACOPY prisma ./prisma/%0A%0A# Generate Prisma client%0ARUN npx prisma generate%0A%0A# Copy the rest of the application%0ACOPY . .%0A%0A# Build TypeScript code%0ARUN npm run build%0A%0A# Expose the port the app runs on%0AEXPOSE 8000%0A%0A# Command to run the application%0ACMD %5B%22npm%22, %22start%22%5D\n",
+                            "isNew": true,
+                            "isApplied": true
+                        },
+                        {
+                            "path": "README.md",
+                            "patch": "@@ -1,132 +1,3710 @@\n # \n-NLW 16%0A%0A%3E Em desenvolvimento%0A%0ANesa edi%C3%A7%C3%A3o participei da trilha Node, criando uma API com TypeSceript + Fastify + Prima com SQLite%0A\n+Trip Planner API%0A%0A%5B!%5BTypeScript%5D(https://img.shields.io/badge/TypeScript-5.5.3-blue.svg)%5D(https://www.typescriptlang.org/)%0A%5B!%5BFastify%5D(https://img.shields.io/badge/Fastify-4.28.1-green.svg)%5D(https://www.fastify.io/)%0A%5B!%5BPrisma%5D(https://img.shields.io/badge/Prisma-5.16.2-orange.svg)%5D(https://www.prisma.io/)%0A%5B!%5BSQLite%5D(https://img.shields.io/badge/SQLite-3-lightgrey.svg)%5D(https://www.sqlite.org/)%0A%5B!%5BLicense%5D(https://img.shields.io/badge/License-ISC-blue.svg)%5D(https://opensource.org/licenses/ISC)%0A%0AA robust RESTful API for trip planning and management built with TypeScript, Fastify, and Prisma ORM.%0A%0A## %F0%9F%93%8B Table of Contents%0A%0A- %5BFeatures%5D(#features)%0A- %5BTech Stack%5D(#tech-stack)%0A- %5BGetting Started%5D(#getting-started)%0A  - %5BPrerequisites%5D(#prerequisites)%0A  - %5BInstallation%5D(#installation)%0A  - %5BDocker Setup%5D(#docker-setup)%0A- %5BAPI Endpoints%5D(#api-endpoints)%0A- %5BDatabase Schema%5D(#database-schema)%0A- %5BDevelopment%5D(#development)%0A- %5BLicense%5D(#license)%0A%0A## %E2%9C%A8 Features%0A%0A- Create and manage trips with destinations and date ranges%0A- Add and confirm participants for trips%0A- Schedule activities for trips%0A- Store useful links related to trips%0A- Email notifications for trip confirmations%0A%0A## %F0%9F%9B%A0%EF%B8%8F Tech Stack%0A%0A- **%5BTypeScript%5D(https://www.typescriptlang.org/)**: Strongly typed programming language%0A- **%5BFastify%5D(https://www.fastify.io/)**: Fast and low overhead web framework%0A- **%5BPrisma%5D(https://www.prisma.io/)**: Next-generation ORM for Node.js and TypeScript%0A- **%5BSQLite%5D(https://www.sqlite.org/)**: Lightweight, file-based database%0A- **%5BZod%5D(https://zod.dev/)**: TypeScript-first schema validation%0A- **%5BNodemailer%5D(https://nodemailer.com/)**: Module for email sending%0A- **%5BDay.js%5D(https://day.js.org/)**: Lightweight date library%0A%0A## %F0%9F%9A%80 Getting Started%0A%0A### Prerequisites%0A%0A- Node.js (v16 or higher)%0A- npm or yarn%0A- Docker (optional, for containerized setup)%0A%0A### Installation%0A%0A1. Clone the repository:%0A   %60%60%60bash%0A   git clone https://github.com/yourusername/trip-planner-api.git%0A   cd trip-planner-api%0A   %60%60%60%0A%0A2. Install dependencies:%0A   %60%60%60bash%0A   npm install%0A   # or%0A   yarn install%0A   %60%60%60%0A%0A3. Set up environment variables:%0A   %60%60%60bash%0A   # Create a .env file with the following variables%0A   DATABASE_URL=%22file:./dev.db%22%0A   # Add other environment variables as needed for email configuration, etc.%0A   %60%60%60%0A%0A4. Run database migrations:%0A   %60%60%60bash%0A   npx prisma migrate dev%0A   %60%60%60%0A%0A5. Start the development server:%0A   %60%60%60bash%0A   npm run dev%0A   # or%0A   yarn dev%0A   %60%60%60%0A%0A### Docker Setup%0A%0AYou can also run the application using Docker:%0A%0A1. Build the Docker image:%0A   %60%60%60bash%0A   docker build -t trip-planner-api .%0A   %60%60%60%0A%0A2. Run the container:%0A   %60%60%60bash%0A   docker run -p 8000:8000 -d trip-planner-api%0A   %60%60%60%0A%0AAlternatively, use Docker Compose:%0A   %60%60%60bash%0A   docker-compose up -d%0A   %60%60%60%0A%0A## %F0%9F%93%A1 API Endpoints%0A%0AThe API provides the following endpoints:%0A%0A- %60POST /trips%60: Create a new trip%0A- %60POST /trips/:id/confirm%60: Confirm a trip%0A- %60POST /participants/:id/confirm%60: Confirm a participant%0A%0AFor detailed API documentation, refer to the API documentation (coming soon).%0A%0A## %F0%9F%97%84%EF%B8%8F Database Schema%0A%0AThe database includes the following models:%0A%0A- **Trip**: Stores trip information including destination and date range%0A- **Participant**: Manages people joining the trip%0A- **Activity**: Schedules activities during the trip%0A- **Link**: Stores useful links related to the trip%0A%0A## %F0%9F%91%A8%E2%80%8D%F0%9F%92%BB Development%0A%0ATo contribute to the project:%0A%0A1. Fork the repository%0A2. Create a feature branch: %60git checkout -b feature/your-feature-name%60%0A3. Commit your changes: %60git commit -m 'Add some feature'%60%0A4. Push to the branch: %60git push origin feature/your-feature-name%60%0A5. Open a pull request%0A%0A## %F0%9F%93%84 License%0A%0AThis project is licensed under the ISC License.\n",
+                            "isNew": false,
+                            "isApplied": true
+                        }
+                    ]
+                }
+            ],
+            "context": {
+                "author": "Coding Agent",
+                "operationId": "7ed6907d-654d-4cd6-bccd-bbb8196faecc"
+            },
+            "createdAt": 1749951876064,
+            "isInternal": false
+        }
+    ],
+    "isAgent": true,
+    "isNameGenerated": true,
+    "isCustomAgent": false,
+    "isUnitTestsAgent": false,
+    "isE2EAgent": false,
+    "autoApply": false
+}
+}
